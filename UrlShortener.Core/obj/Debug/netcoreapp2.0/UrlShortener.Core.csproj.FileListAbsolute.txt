@@ -1,0 +1,11 @@
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\bin\Debug\netcoreapp2.0\UrlShortener.Core.deps.json
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\bin\Debug\netcoreapp2.0\UrlShortener.Core.runtimeconfig.json
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\bin\Debug\netcoreapp2.0\UrlShortener.Core.runtimeconfig.dev.json
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\bin\Debug\netcoreapp2.0\UrlShortener.Core.dll
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\bin\Debug\netcoreapp2.0\UrlShortener.Core.pdb
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.csprojResolveAssemblyReference.cache
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.csproj.CoreCompileInputs.cache
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.AssemblyInfoInputs.cache
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.AssemblyInfo.cs
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.dll
+C:\Users\MMARTINOVIC\source\repos\UrlShortener\UrlShortener.Core\obj\Debug\netcoreapp2.0\UrlShortener.Core.pdb

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron jumbotron-font">
+    <div class="container text-center">
+        @if (User.Identity.IsAuthenticated)
+            {
+            <span>Welcome @User.Identity.Name</span>
+        }
+        else
+        {
+            <span>Welcome to UrlShortener</span>
+        }
+    </div>
+</div>

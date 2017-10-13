@@ -1,0 +1,34 @@
+﻿@model List<UrlShortener.Core.Models.ShortUrlData>
+@{
+    ViewData["Title"] = "Statistic";
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Long URL</th>
+            <th class="text-center">Number of clicks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.LongUrl</td>
+                <td class="text-center">@item.Statistic.NumOfClicks</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-6">
+            @item.LongUrl
+        </div>
+        <div class="col-sm-6">
+            @item.Statistic.NumOfClicks
+        </div>
+    </div>
+}*@

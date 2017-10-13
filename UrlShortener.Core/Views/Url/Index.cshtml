@@ -1,0 +1,55 @@
+﻿@model List<UrlShortener.Core.Models.ShortUrlData>
+
+@{ 
+    ViewData["Title"] = "Url";
+}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="panel-title">
+            Shorten an URL
+        </div>
+    </div>
+    <div class="panel-body">
+        <form method="post" asp-controller="Url" asp-action="CreateShortUrl">
+            <div class="input-group">
+                <input type="text" class="form-control" name="originalUrl" placeholder="Type an URL" />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="panel-footer">
+        <span class="text-danger">@ViewData["ErrorMessage"]</span>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Long URL</th>
+            <th>Short URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.LongUrl</td>
+                <td><a asp-controller="Url" asp-action="ToUrl" asp-route-id="@item.UniquePart" target="_blank">@item.ShortUrl</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-6">
+            @item.LongUrl
+        </div>
+        <div class="col-sm-6">
+            <a asp-controller="Url" asp-action="RedirectToUrl" asp-route-id="@item.UniquePart">@item.ShortUrl</a>
+        </div>
+    </div>
+}*@

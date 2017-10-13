@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<div class="panel panel-primary panel-login">
+    <div class="panel-heading">
+        Login
+    </div>
+    <div class="panel-body">
+        <form method="post" asp-controller="Account" asp-action="Login">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Username</label>
+                    <input type="text" class="form-control input-sm" name="username" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Password</label>
+                    <input type="password" class="form-control input-sm" name="password" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+
+        <div asp-validation-summary="All"></div>
+    </div>
+
+    <div class="panel-footer">
+        <span class="text-danger">
+            &nbsp;
+            @ViewData["ErrorMessage"]
+        </span>
+
+        <span class="pull-right">No account? <a asp-controller="Account" asp-action="Register">Create here</a></span>
+    </div>
+</div>
